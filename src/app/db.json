@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "country": "Country 1",
+      "state": "State 1",
+      "vertical": "Vertical 1",
+      "status": "Status 1",
+      "brand": "Brand 1"
+    },
+    {
+        "id": 2,
+        "country": "Country 2",
+        "state": "State 2",
+        "vertical": "Vertical 2",
+        "status": "Status 2",
+        "brand": "Brand 2"
+      },
+      {
+        "id": 3,
+        "country": "Country 3",
+        "state": "State 3",
+        "vertical": "Vertical 3",
+        "status": "Status 3",
+        "brand": "Brand 3"
+      }
+  ]

@@ -9,7 +9,7 @@ import { Regulation } from '../models/regulation.model';
   providedIn: 'root'
 })
 export class RegulationService {
-  baseUrl = 'https://jsonplaceholder.typicode.com';
+  baseUrl = 'https://github.com/kkondrat98/table/tree/master/src/app/db.json';
   constructor(private http: HttpClient) { }
 
   addRegulation(regulation: Regulation): Observable<any> {

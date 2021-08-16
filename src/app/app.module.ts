@@ -42,6 +42,7 @@ import { DeleteUserComponent } from './users/delete-user/delete-user.component';
 import { EditUserComponent } from './users/edit-user/edit-user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { EditRegulationComponent } from './edit-regulation/edit-regulation.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     AddUserComponent,
     DeleteUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    EditRegulationComponent
   ],
   imports: [
     AppRoutingModule,

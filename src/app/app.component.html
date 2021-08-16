@@ -12,22 +12,40 @@
       <td mat-cell *matCellDef="let element"> {{element.name}} </td>
     </ng-container>
 
-    <!-- Name Column -->
-    <ng-container matColumnDef="username">
-      <th mat-header-cell *matHeaderCellDef> UserName </th>
-      <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+    <!-- Country Column -->
+    <ng-container matColumnDef="country">
+      <th mat-header-cell *matHeaderCellDef> Country </th>
+      <td mat-cell *matCellDef="let element"> {{element.country}} </td>
     </ng-container>
 
-    <!-- Weight Column -->
-    <ng-container matColumnDef="email">
-      <th mat-header-cell *matHeaderCellDef> E-mail </th>
-      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    <!-- State Column -->
+    <ng-container matColumnDef="state">
+      <th mat-header-cell *matHeaderCellDef> State </th>
+      <td mat-cell *matCellDef="let element"> {{element.state}} </td>
     </ng-container>
 
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="phone">
-      <th mat-header-cell *matHeaderCellDef> Phone </th>
-      <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+    <!-- Vertical Column -->
+    <ng-container matColumnDef="vertical">
+      <th mat-header-cell *matHeaderCellDef> Vertical </th>
+      <td mat-cell *matCellDef="let element"> {{element.vertical}} </td>
+    </ng-container>
+
+    <!-- Status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+
+      <!-- Brand Column -->
+      <ng-container matColumnDef="brand">
+        <th mat-header-cell *matHeaderCellDef> Brand </th>
+        <td mat-cell *matCellDef="let element"> {{element.brand}} </td>
+      </ng-container>
+
+    <!-- City Column -->
+    <!-- <ng-container matColumnDef="city">
+      <th mat-header-cell *matHeaderCellDef> City </th>
+      <td mat-cell *matCellDef="let element"> {{element.city}} </td>
     </ng-container>
 
     <ng-container matColumnDef="city">
@@ -37,23 +55,22 @@
     <ng-container matColumnDef="zipcode">
       <th mat-header-cell *matHeaderCellDef> Zip </th>
       <td mat-cell *matCellDef="let element"> {{element.address.zipcode}} </td>
-    </ng-container>
+    </ng-container> -->
     <ng-container matColumnDef="actions">
-      <mat-header-cell *matHeaderCellDef>
+      <!-- <mat-header-cell *matHeaderCellDef>
         <button mat-icon-button color="primary">
           <mat-icon aria-label="Example icon-button with a heart icon" (click)="addUser()">add</mat-icon>
         </button>
-      </mat-header-cell>
+      </mat-header-cell> -->
 
       <mat-cell *matCellDef="let row; let i=index;">
         <button mat-icon-button color="accent">
-          <mat-icon aria-label="Edit" (click)="editDialog(i,row.id)">edit</mat-icon>
+          <mat-icon aria-label="Edit" (click)="editRegulationDialog(i,row.id)">edit</mat-icon>
         </button>
 
-        <button mat-icon-button color="accent">
-          <!-- <mat-icon aria-label="Delete" (click)="deleteDialog(i, 1, row.name, row.username, row.email,row.phone,row.city,row.zipcode)">delete</mat-icon> -->
+        <!-- <button mat-icon-button color="accent">
           <mat-icon aria-label="Delete" (click)="deleteDialog(i,row.id,row.name, row.username, row.email,row.phone,row.address.city,row.address.zipcode)">delete</mat-icon>
-        </button>
+        </button> -->
       </mat-cell>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef=" displayedColumns">
